@@ -1,0 +1,471 @@
+@font-face {
+    font-family: 'Lobster';
+    src: local('Lobster'),
+            url('../fonts/lobster/lobster.woff2') format('woff2'),
+            url('../fonts/lobster/lobster.woff') format('woff'),
+            url('../fonts/lobster/lobster.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'),
+            local('OpenSans-Light'),
+            url('../fonts/opensans/opensanslight.woff2') format('woff2'),
+            url('../fonts/opensans/opensanslight.woff') format('woff'),
+            url('../fonts/opensans/opensanslight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url('../fonts/opensans/opensanslightitalic.woff2') format('woff2'), url('../fonts/opensans/opensanslightitalic.woff') format('woff'), url('../fonts/opensans/opensanslightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'), url('../fonts/opensans/opensans.woff2') format('woff2'), url('../fonts/opensans/opensans.woff') format('woff'), url('../fonts/opensans/opensans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url('../fonts/opensans/opensansitalic.woff2') format('woff2'), url('../fonts/opensans/opensansitalic.woff') format('woff'), url('../fonts/opensans/opensansitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('../fonts/opensans/opensanssemibold.woff2') format('woff2'), url('../fonts/opensans/opensanssemibold.woff') format('woff'), url('../fonts/opensans/opensanssemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url('../fonts/opensans/opensanssemibolditalic.woff2') format('woff2'), url('../fonts/opensans/opensanssemibolditalic.woff') format('woff'), url('../fonts/opensans/opensanssemibolditalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../fonts/opensans/opensansbold.woff2') format('woff2'), url('../fonts/opensans/opensansbold.woff') format('woff'), url('../fonts/opensans/opensansbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('../fonts/opensans/opensansbolditalic.woff2') format('woff2'), url('../fonts/opensans/opensansbolditalic.woff') format('woff'), url('../fonts/opensans/opensansbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('../fonts/opensans/opensansextrabold.woff2') format('woff2'), url('../fonts/opensans/opensansextrabold.woff') format('woff'), url('../fonts/opensans/opensansextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'), url('../fonts/opensans/opensansextrabolditalic.woff2') format('woff2'), url('../fonts/opensans/opensansextrabolditalic.woff') format('woff'), url('../fonts/opensans/opensansextrabolditalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Thin'), local('BebasNeue-Thin'), url('../fonts/bebasneue/bebasneuethin.woff2') format('woff2'), url('../fonts/bebasneue/bebasneuethin.woff') format('woff'), url('../fonts/bebasneue/bebasneuethin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Light'), local('BebasNeue-Light'), url('../fonts/bebasneue/bebasneuelight.woff2') format('woff2'), url('../fonts/bebasneue/bebasneuelight.woff') format('woff'), url('../fonts/bebasneue/bebasneuelight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Book'), local('BebasNeueBook'), url('../fonts/bebasneue/bebasneuebook.woff2') format('woff2'), url('../fonts/bebasneue/bebasneuebook.woff') format('woff'), url('../fonts/bebasneue/bebasneuebook.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('../fonts/bebasneue/bebasneueregular.woff2') format('woff2'), url('../fonts/bebasneue/bebasneueregular.woff') format('woff'), url('../fonts/bebasneue/bebasneueregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('../fonts/bebasneue/bebasneuebold.woff2') format('woff2'), url('../fonts/bebasneue/bebasneuebold.woff') format('woff'), url('../fonts/bebasneue/bebasneuebold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.clear {
+    clear: both;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.head {
+    height: 124px;
+    line-height: 124px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    line-height: 124px;
+    font-family: "Lobster", sans-serif;
+    font-size: 50px;
+    color: #3CC3B5;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    margin: 0 20px;
+}
+
+.search input {
+    height: 30px;
+    width: 435px;
+    margin: 0 130px;
+    line-height: 30px;
+    font-size: 25px;
+    color: #afafaf;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.search {
+    position: relative;
+}
+
+.glass {
+    position: absolute;
+    top: 46px;
+    right: 130px;
+    height: 25px;
+    width: 25px;
+    background: url("../img/glass.png") no-repeat;
+}
+
+.cart {
+    float: right;
+    margin: 0 25px;
+    font-size: 35px;
+    color: #a1a1a1;
+    font-weight: bold;
+}
+
+.cart img {
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.logo,
+.search,
+.search[type="search"] {
+    float: left;
+}
+
+.menu {
+    background-color: #4ccfc1;
+    height: 36px;
+}
+
+.menu li {
+    list-style: none;
+    float: left;
+}
+
+.menu a {
+    color: #fff;
+    padding: 0 22px;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: capitalize;
+    line-height: 35px;
+    border-left: 2px solid #fff;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu ul li:first-child>a {
+    border-left: none;
+}
+
+.content {
+    position: relative;
+}
+
+.carousel {
+    background-color: #3fc5b9;
+}
+
+.image-carousel {
+    width: 370px;
+    padding: 80px 0 0 60px;
+    float: left;
+}
+
+.description p {
+    margin: 0 0 20px 0;
+}
+
+.description {
+    width: 365px;
+    padding-top: 120px;
+    float: left;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+}
+
+.description h3 {
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 61px;
+}
+
+.buy-button {
+    color: #fff;
+    padding: 3px 20px;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 27px;
+    border-radius: 8px;
+    border: 3px solid #fff;
+}
+
+.buy-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.slider-point {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.slider-point ul {
+    list-style: none;
+    padding-bottom: 30px;
+}
+
+.slider-point li {
+    float: left;
+    margin-left: 13px;
+    width: 9px;
+    height: 9px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.slider-point .p1 {
+    margin-left: 0;
+}
+
+.slider-point .active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.popular {
+    height: 190px;
+    font-family: "Bebas Neue", sans-serif;
+    overflow: hidden;
+}
+
+.left-arrow::before,
+.right-arrow::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 80px;
+    width: 80px;
+    left: -50px;
+    top: 510px;
+    box-shadow: -2px 2px 0 #d4d4d4;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.right-arrow::after {
+    left: 1000px;
+    top: 510px;
+    transform: rotate(-135deg);
+}
+
+.popular ul {
+    list-style: none;
+}
+
+.popular li,
+.popular img,
+.popular p,
+.cards a,
+.cards li {
+    display: inline-block;
+}
+
+.popular li {
+    border-right: 1px solid #e7e7e7;
+    width: 338px;
+}
+
+.popular img {
+    width: 189px;
+}
+
+.popular p {
+    color: #afafaf;
+    font-size: 27px;
+    font-weight: bold;
+    width: 80px;
+    vertical-align: top;
+    margin: 40px 0 0 40px;
+}
+
+.popular a {
+    display: block;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    background-color: #3cc395;
+    color: #fff;
+    height: 30px;
+    width: 60px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.popular a:hover {
+    background-color: rgba(60, 195, 149, 0.7);
+}
+
+.featured-products {
+    height: 65px;
+    line-height: 65px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 31px;
+    padding-left: 40px;
+    color: #fff;
+    background-color: #3dc0b9;
+}
+
+.cards {
+    height: 690px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #afafaf;
+}
+
+.cards ul {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.cards li {
+    margin: 70px 0 0 50px;
+    width: 260px;
+    border: 1px solid #e7e7e7;
+}
+
+.cards li::after {
+    display: block;
+    content: "";
+    border-bottom: 5px solid #3cc395;
+
+}
+
+.brand-name {
+    margin-left: 70px;
+    font-size: 27px;
+    /*width: 220px;*/
+    /*text-align: center;*/
+}
+
+.card-price {
+    margin-left: 70px;
+    display: inline-block;
+    font-size: 27px;
+    /*text-align: center;*/
+    line-height: 30px;
+}
+
+.cards a {
+    vertical-align: top;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    background-color: #3cc395;
+    color: #fff;
+    height: 30px;
+    width: 60px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 0 15px 20px;
+}
+
+.cards a:hover {
+    background-color: rgba(60, 195, 149, 0.7);
+}
+
+.footer-menu {
+    height: 335px;
+    background-color: #3cc3b5;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer-menu ul {
+    display: inline-block;
+    margin-left: 95px;
+    margin-top: 30px;
+}
+
+.footer-menu li {
+    list-style: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-menu li:first-child {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.footer-copyright {
+    height: 45px;
+    background-color: #2da89b;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 45px;
+    text-align: center;
+}
